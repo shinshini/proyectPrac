@@ -9,7 +9,7 @@ import com.example.primeropasoskotlin.models.CategoriaRepositorio
 import com.example.primeropasoskotlin.models.Proveedor
 
 class CategoriaViewModel(aplication:Application):AndroidViewModel(aplication) {
-    private val categoriaDao:CategoriaDao
+    private val categoriaDao:CategoriaDao //esto es la conexion con models donde va ver si va pasar
     val categoria:MutableLiveData<List<Categoria>> = MutableLiveData()
 
     init {
@@ -29,4 +29,5 @@ class CategoriaViewModel(aplication:Application):AndroidViewModel(aplication) {
         val categoriaEncontrado = categoriaDao.buacarCategoriaId(id)
         return categoriaEncontrado
     }
+    //
 }

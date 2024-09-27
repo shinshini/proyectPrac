@@ -13,4 +13,7 @@ class CategoriaDao(private val categoriaRepositorio: CategoriaRepositorio) {
     fun buacarCategoriaId(id:String): Categoria? {
         return categoriaRepositorio.buscarCategoriaPorId(id)
     }
+
+    //esta clase es  para comunicarse
+    //conexion con firebase resivir datos
 }
